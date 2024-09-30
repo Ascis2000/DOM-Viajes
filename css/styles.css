@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #FDFDFD;
+
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, serif, Arial, sans-serif;
+
+    background-color: #ffffff;
+}
+
+main {
+    width:70%;
+    min-width: 300px;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Sección central */
+.central {
+    width:100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.central h1 {
+    color: #333;
+    font-size: 0.9em;
+    text-align: left;
+    margin:0px;
+}
+
+.central .imagen-central {
+    width: 100%;
+    
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de las cards */
+.boxArticulos {
+    gap: 15px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.box {
+    flex: 1;
+    display:block; 
+
+    color:black;
+    text-align:left;
+
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+div.box .boxTexto{
+    display:block;
+    padding: 10px;
+}
+div.box .boxTexto div{
+    font-size:0.8em;
+    font-weight:bold;
+}
+div.box .boxTexto label{
+    font-size:0.7em;
+}
+
+div.card-img {
+    flex: 1;
+    padding: 15px;
+    min-width: 200px;
+    min-height: 150px;
+
+    z-index:1;
+    display:block;
+    position: relative;
+    border-radius: 5px 5px 0px 0px;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+.card-img.uno{
+    background-image:url('../img/viajes/viajes-1.jpg');
+}
+.card-img.dos{
+    background-image:url('../img/viajes/viajes-2.jpg');
+}
+.card-img.tres{
+    background-image:url('../img/viajes/viajes-3.jpg');
+}
+
+select.ciudades {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+
+    color: rgb(41, 90, 142);
+    font-size: 0.9em;
+
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0px 0px 6px rgba(228, 244, 254, 0.6);
+}
+
